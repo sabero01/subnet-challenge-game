@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# ==============================================================================
-# Subnetting Challenge Game
-# A terminal-based game to practice IPv4 subnetting.
-# ==============================================================================
-
-# --- Colors and UI Elements ---
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -68,11 +62,6 @@ while [ $hearts -gt 0 ]; do
     cidr=$(( RANDOM % 23 + 8 )) # CIDR between /8 and /30
     
     # 2. Calculate Subnet Math
-    # Math Explanation:
-    # - Mask: We shift all 1s to the left by (32 - CIDR) bits.
-    # - Network: IP bitwise AND Mask.
-    # - Wildcard: Bitwise NOT of Mask (inverted).
-    # - Broadcast: Network bitwise OR Wildcard.
     
     ip_int=$(ip_to_int "$ip")
     mask_int=$(( (0xFFFFFFFF << (32 - cidr)) & 0xFFFFFFFF ))
