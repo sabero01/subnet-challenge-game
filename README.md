@@ -2,6 +2,9 @@
 
 A lightweight, terminal-based Bash script designed to help network engineers and students master IPv4 subnetting through gamification.
 
+<img width="975" height="525" alt="Screenshot from 2026-04-05 19-33-15" src="https://github.com/user-attachments/assets/cd4d4154-475e-4d8b-81b4-b7a0ae99a413" />
+
+
 ## Purpose
 I created this project to move away from boring static tables and learn **IP Subnetting** in a fun, interactive way. By practicing Network Address, First Usable IP, and Broadcast Address calculations against the clock, I can build the mental muscle memory needed for exams like the CCNA.
 
